@@ -19,7 +19,7 @@ Qiitaの「クローラー／Webスクレイピング Advent Calendar 2016」に
 
 以下のページから25日分の記事のURLとタイトルを取得して表示してください。
 
-クローラー／Webスクレイピング Advent Calendar 2016 - Qiita
+クローラー／Webスクレイピング Advent Calendar 2016 - Qiita  
 http://qiita.com/advent-calendar/2016/crawler
 
 ### 期待する出力例
@@ -65,7 +65,7 @@ http://shinyorke.hatenablog.com/entry/2016/12/25/172917 Pythonを用いたWebス
 
 以下のページから外貨普通預金の通貨ごとの金利を取得して表示してください。
 
-みずほ銀行 : 外貨預金金利
+みずほ銀行 : 外貨預金金利  
 https://www.mizuhobank.co.jp/rate/interest.html
 
 ### 期待する出力例
@@ -85,7 +85,7 @@ https://www.mizuhobank.co.jp/rate/interest.html
 pandasを使っている場合は、pandas.read_html()関数を使うとHTMLの表を簡単にデータフレームに変換できます。
 良かったら試してみてください。
 
-pandas.read_html — pandas 0.19.2 documentation
+pandas.read_html — pandas 0.19.2 documentation  
 http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_html.html
 
 
@@ -97,7 +97,7 @@ http://pandas.pydata.org/pandas-docs/stable/generated/pandas.read_html.html
 
 Livedoorのお天気Webサービスを使って、神戸の明日の天気と最高気温を表示してください。
 
-お天気Webサービス仕様 - Weather Hacks - livedoor 天気情報
+お天気Webサービス仕様 - Weather Hacks - livedoor 天気情報  
 http://weather.livedoor.com/weather_hacks/webservice
 
 以下のURLで神戸の天気予報をJSON形式で取得できます。
