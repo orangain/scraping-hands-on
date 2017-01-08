@@ -79,20 +79,24 @@ b'<!DOCTYPE html>\n<html lang="ja"\n    xmlns:og="http://ogp.me/ns#"\n    xmlns:
 'Yahoo!ニュース'
 # select()でCSSセレクターにマッチする要素のリストを取得
 >>> soup.select('.topics .ttl a')
-[<a href="http://news.yahoo.co.jp/pickup/6226459" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226459'">空中給油再開か 米軍明かさず<span class="icPhoto">写真</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226465" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226465'">シリアの露軍 規模縮小を開始<span class="icPhoto">写真</span><span class="icNew">new</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226466" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226466'">老人ホーム 入浴中に女性死亡<span class="icVideo">映像</span><span class="icNew">new</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226461" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226461'">「一風堂」マザーズ上場へ<span class="icPhoto">写真</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226440" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226440'">セイウチは鳥で遊ぶ 初の報告<span class="icPhoto">写真</span><span class="icNew">new</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226455" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226455'">スノボ5選手 強化指定を解除</a>, <a href="http://news.yahoo.co.jp/pickup/6226463" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226463'">7kg減の梅宮辰夫 復調を宣言<span class="icPhoto">写真</span><span class="icNew">new</span></a>]
+[<a href="http://news.yahoo.co.jp/pickup/6226622" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226622'">関東甲信の山地 大雪に警戒を<span class="icPhoto">写真</span><span class="icNew">new</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226616" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226616'">駐韓日本大使 9日に一時帰国<span class="icPhoto">写真</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226615" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226615'">就寝中の夫を殴打 41歳女逮捕<span class="icVideo">映像</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226624" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226624'">祝日が土曜日 振替休日ない訳<span class="icPhoto">写真</span><span class="icNew">new</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226607" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226607'">夜だけ開く文具店 SNSで評判<span class="icPhoto">写真</span><span class="icNew">new</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226623" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226623'">俊輔 純粋にボール追いたい<span class="icPhoto">写真</span><span class="icNew">new</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226619" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226619'">錦織が惜敗 初優勝ならず<span class="icPhoto">写真</span></a>, <a href="http://news.yahoo.co.jp/pickup/6226617" onmousedown="this.href='http://news.yahoo.co.jp/pickup/6226617'">爆問田中が喜び会見 太田暴走<span class="icPhoto">写真</span></a>]
 # ニュースのURL（a要素のhref属性）とタイトル（a要素内の文字列の内最初のもの）を表示
 >>> for a in soup.select('.topics .ttl a'):
 ...     print(a['href'], list(a.strings)[0])
 ...
-http://news.yahoo.co.jp/pickup/6226454 韓国外相 日本大使を呼び出し
-http://news.yahoo.co.jp/pickup/6226459 空中給油再開か 米軍明かさず
-http://news.yahoo.co.jp/pickup/6226465 シリアの露軍 規模縮小を開始
-http://news.yahoo.co.jp/pickup/6226466 老人ホーム 入浴中に女性死亡
-http://news.yahoo.co.jp/pickup/6226461 「一風堂」マザーズ上場へ
-http://news.yahoo.co.jp/pickup/6226440 セイウチは鳥で遊ぶ 初の報告
-http://news.yahoo.co.jp/pickup/6226455 スノボ5選手 強化指定を解除
-http://news.yahoo.co.jp/pickup/6226463 7kg減の梅宮辰夫 復調を宣言
+http://news.yahoo.co.jp/pickup/6226622 関東甲信の山地 大雪に警戒を
+http://news.yahoo.co.jp/pickup/6226616 駐韓日本大使 9日に一時帰国
+http://news.yahoo.co.jp/pickup/6226615 就寝中の夫を殴打 41歳女逮捕
+http://news.yahoo.co.jp/pickup/6226624 祝日が土曜日 振替休日ない訳
+http://news.yahoo.co.jp/pickup/6226607 夜だけ開く文具店 SNSで評判
+http://news.yahoo.co.jp/pickup/6226623 俊輔 純粋にボール追いたい
+http://news.yahoo.co.jp/pickup/6226619 錦織が惜敗 初優勝ならず
+http://news.yahoo.co.jp/pickup/6226617 爆問田中が喜び会見 太田暴走
 ```
+
+CSSセレクターを考える際はブラウザーの開発者ツールを活用します。Google Chromeの場合、要素を右クリックして「検証」を選択するとその要素にフォーカスした状態で開発者ツールが表示されます。
+
+![Google Chromeの開発者ツールで要素を表示している様子](devtool.png)
 
 ## 参考
 
