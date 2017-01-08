@@ -6,4 +6,5 @@ soup = BeautifulSoup(r.content, 'html.parser')
 
 for td in soup.select('.adventCalendarCalendar_day'):
     a = td.select_one('.adventCalendarCalendar_comment a')
-    print(td.select_one('.adventCalendarCalendar_author').text.strip(), a['href'], a.string)
+    author = td.select_one('.adventCalendarCalendar_author').text.strip()
+    print(author, a['href'], a.string)
