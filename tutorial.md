@@ -107,4 +107,4 @@ CSSセレクターを考える際はブラウザーの開発者ツールを活�
 
 [exercises.md](./exercises.md)に練習問題を用意しています。
 
-回答例は[answer](./answer)ディレクトリ内にあります。
+解答例は[answer](./answer)ディレクトリ内にあります。
